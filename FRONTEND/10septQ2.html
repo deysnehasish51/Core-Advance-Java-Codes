@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Links in HTML</title>
+</head>
+<body>
+    <h1>Demonstrating Types of Links in HTML</h1>
+
+    <!-- Internal Links -->
+    <h2>Internal Links</h2>
+    <p>Internal links navigate to different sections within the <em>same</em> webpage.</p>
+    <ul>
+        <li><a href="#section1">Go to Section 1</a></li>
+        <li><a href="#section2">Go to Section 2</a></li>
+        <li><a href="#section3">Go to Section 3</a></li>
+    </ul>
+
+    <!-- External Links -->
+    <h2>External Links</h2>
+    <p>External links navigate to different websites or web pages outside of the current domain.</p>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Visit Google (opens in new tab)</a></li>
+        <li><a href="https://www.wikipedia.org">Visit Wikipedia</a></li>
+    </ul>
+
+    <!-- Text Links -->
+    <h2>Text Links</h2>
+    <p>Text links use regular text as the clickable element.</p>
+    <p>Click <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">here</a> to learn more about the anchor tag.</p>
+
+    <!-- Picture Links -->
+    <h2>Picture Links</h2>
+    <p>Picture links use an image as the clickable element. Clicking the image will take you to the specified URL.</p>
+    <a href="https://unsplash.com" target="_blank">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Ocean View" width="400">
+    </a>
+    <p>Click the image above to visit Unsplash.</p>
+
+    <!-- Local Links -->
+    <h2>Local Links</h2>
+    <p>Local links are used to navigate to other HTML files or resources within the same project or server.</p>
+    <p>To demonstrate a local link, imagine you have another file named <code>about.html</code> in the same folder. 
+       Click <a href="about.html">here</a> to go to the "About Us" page 
+       (this link will likely result in a "file not found" error unless such a file exists).</p>
+
+    <!-- Email Links -->
+    <h2>Email Links</h2>
+    <p>Email links (mailto links) open the user's default email client, pre-filling the recipient's address.</p>
+    <p><a href="mailto:example@example.com">Send an Email to Example</a></p>
+
+    <!-- Example Internal Sections -->
+    <h3 id="section1">Section 1</h3>
+    <p>This is Section 1 content.</p>
+
+    <h3 id="section2">Section 2</h3>
+    <p>This is Section 2 content.</p>
+
+    <h3 id="section3">Section 3</h3>
+    <p>This is Section 3 content.</p>
+
+</body>
+</html>

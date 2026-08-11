@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Changing</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container
+        {
+            height: 250px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            border: 1px solid white;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px #111;
+        }
+        .container h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+        }
+        #buttons
+        {
+            width: 95%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 60px;
+            border-bottom:1px solid black;
+        }
+        .btn
+        {
+            width: 120px;
+            height:45px;
+            border: none;
+            font-size: 14px;
+            font-weight: 700;
+            background: transparent;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .btn:hover{
+            border-bottom: 2px solid black;
+        }
+        #content1
+        {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        #content2
+        {
+            display: none;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        #content3
+        {
+            display: none;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Tabbed Content</h1>
+        
+        <div id="buttons">
+            <button class="btn" id="btn1">Tab 1</button>
+            <button class="btn" id="btn2">Tab 2</button>
+            <button class="btn" id="btn3">Tab 3</button>
+        </div>
+        <hr>
+
+        <div id="content1">
+            <h2 class="heading">Content for Tab 1</h2>
+            <span class="span">This is the contetn for the first tab. it is currently visible. To see the content for other 
+            tabs, simply click on thte corresponding tab button above.</span>
+        </div>
+        <div id="content2">
+            <h2 class="heading">Content for Tab 2</h2>
+            <span class="span">This is the contetn for the first tab. it is currently visible. To see the content for other 
+            tabs, simply click on thte corresponding tab button above.</span>
+        </div>
+        <div id="content3">
+            <h2 class="heading">Content for Tab 3</h2>
+            <span class="span">This is the contetn for the first tab. it is currently visible. To see the content for other 
+            tabs, simply click on thte corresponding tab button above.</span>
+        </div>
+    </div>
+
+    <script>
+        let btn1=document.getElementById("btn1")
+        btn1.addEventListener('click',(e)=>{
+
+            document.getElementById("content2").style.display="none";
+            document.getElementById("content3").style.display="none";
+            document.getElementById("content1").style.display="flex";
+            document.getElementById("btn1").style.border="1px solid black";
+            document.getElementById("btn2").style.border="none";
+            document.getElementById("btn3").style.border="none";
+        });
+
+        let btn2=document.getElementById("btn2")
+        btn2.addEventListener('click',(e)=>{
+
+            document.getElementById("content2").style.display="flex";
+            document.getElementById('content1').style.display="none";
+            document.getElementById("content3").style.display="none";
+            document.getElementById("btn2").style.border="1px solid black";
+            document.getElementById("btn1").style.border="none";
+            document.getElementById("btn3").style.border="none";
+        });
+
+        let btn3=document.getElementById("btn3")
+        btn3.addEventListener('click',(e)=>{
+            document.getElementById("content3").style.display="flex";
+            document.getElementById("content2").style.display="none";
+            document.getElementById('content1').style.display="none";
+            document.getElementById("btn3").style.border="1px solid black";
+            document.getElementById("btn1").style.border="none";
+            document.getElementById("btn2").style.border="none";
+        });
+    </script>
+</body>
+</html>

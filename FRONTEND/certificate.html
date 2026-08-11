@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehasish Portfolio</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e1b4b, #0f172a);
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    section {
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    /* Tabs Container as Big Rectangle */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      width: 80%;
+      margin: 0 auto 50px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    }
+    .tab {
+      flex: 1;
+      padding: 16px 0;
+      font-weight: 600;
+      cursor: pointer;
+      color: #f8fafc;
+      text-align: center;
+      background: transparent;
+      transition: all 0.4s;
+      border: none;
+      outline: none;
+    }
+    .tab.active {
+      background: linear-gradient(90deg, #6366f1, #3b82f6);
+      color: #0f172a;
+      box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
+    }
+    .tab:hover {background: rgba(255,255,255,0.08);}
+
+    /* Sections */
+    .cards-wrapper {position: relative; width: 100%;}
+    .section {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+      pointer-events: none;
+    }
+    .section.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* Cards Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+    .card {
+      width: 100%;
+      height: 340px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      display:flex;
+      flex-direction:column;
+      gap: 14px;
+      transform: scale(0.9);
+      opacity:0;
+      animation: fadeUp 0.7s forwards;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: scale(1.05) rotateX(5deg);
+      box-shadow: 0 16px 40px rgba(59,130,246,0.7);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .card span {font-size: 1rem; color:#a5b4fc;}
+    .card p {font-size: 0.95rem; color:#cbd5e1; flex:1;}
+
+    /* Animations */
+    @keyframes fadeUp {
+      from {opacity:0; transform:translateY(40px) scale(0.9);}
+      to {opacity:1; transform:translateY(0) scale(1);}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================== Education & Certifications ================== -->
+  <section id="education-certifications">
+
+    <!-- Tabs inside Big Box -->
+    <div class="tabs">
+      <button class="tab active" data-tab="education">Education</button>
+      <button class="tab" data-tab="certifications">Certifications</button>
+    </div>
+
+    <!-- Wrapper -->
+    <div class="cards-wrapper">
+
+      <!-- Education -->
+      <div class="section active" id="education">
+        <div class="cards">
+          <div class="card" style="animation-delay:0.1s">
+            <img src="https://picsum.photos/500/300?1" alt="LPU">
+            <span>2023 — 2025</span>
+            <p>MCA with <strong>CGPA 8.2</strong>. Specialized in software engineering, DBMS & full-stack development.</p>
+          </div>
+          <div class="card" style="animation-delay:0.2s">
+            <img src="https://picsum.photos/500/300?2" alt="MSCBU">
+            <span>2020 — 2023</span>
+            <p>B.Sc. Physics with <strong>CGPA 9.03</strong>. Strengthened problem-solving & logical reasoning skills.</p>
+          </div>
+          <div class="card" style="animation-delay:0.3s">
+            <img src="https://picsum.photos/500/300?3" alt="Prince College">
+            <span>2019 — 2020</span>
+            <p>Higher Secondary (Science) with <strong>76.77%</strong>. Built strong fundamentals in Physics & Math.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section" id="certifications">
+        <div class="cards">
+          <div class="card" style="animation-delay:0.1s">
+            <img src="https://picsum.photos/500/300?4" alt="Internship">
+            <span>2024</span>
+            <p>Web Development Internship — Octanet. Built responsive websites & modern applications.</p>
+          </div>
+          <div class="card" style="animation-delay:0.2s">
+            <img src="https://picsum.photos/500/300?5" alt="Java">
+            <span>2023</span>
+            <p>Java Programming — Oracle Academy. Certified in OOP concepts, syntax, and data structures.</p>
+          </div>
+          <div class="card" style="animation-delay:0.3s">
+            <img src="https://picsum.photos/500/300?6" alt="Frontend">
+            <span>2022</span>
+            <p>Frontend Development — Coursera. HTML, CSS, JavaScript & responsive design training.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const sections = document.querySelectorAll(".section");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+
+        const target = tab.dataset.tab;
+        sections.forEach(s => {
+          if(s.id === target){
+            s.classList.add("active");
+            const children = s.querySelectorAll(".card");
+            children.forEach((item, idx) => {
+              item.style.animation = "none";
+              void item.offsetWidth;
+              item.style.animation = "";
+              item.style.animation = `fadeUp 0.7s ${idx * 0.2}s forwards`;
+            });
+          } else {
+            s.classList.remove("active");
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

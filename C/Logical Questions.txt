@@ -1,0 +1,434 @@
+Print Prime Numbers up to N
+Write a C program that takes an integer input N from the user and prints all prime numbers up to N using a while (true) loop. If the user enters a non-positive value, the program should terminate.
+
+Test Cases :-
+-------------
+
+Test-Case-1 :-
+--------------
+Input: N = 10
+Output: 2 3 5 7
+Explanation: Prints all prime numbers from 2 to 10.
+
+Test-Case-2 :-
+--------------
+Input: N = 1
+Output: No prime numbers.
+Explanation: There are no prime numbers less than or equal to 1.
+
+Test-Case-3 :-
+--------------
+Input: N = -3
+Output: Invalid input. Program terminated.
+Explanation: Negative value entered; program exits.
+Sample Input
+-3
+Sample Output
+Invalid input. Program terminated.
+
+ANSWER:
+
+#include<stdio.h>
+
+int main()
+{
+    int range,i=2;
+    scanf("%d",&range);
+    
+    if(range==1)
+    {
+        printf(" No prime numbers.");
+…            if(count==2)
+            {
+                printf("%d ",i);
+            }
+        i++ ; 
+    }
+    }
+    return 0;
+}
+
+
+
+FindFactorial
+write a C program to find the factorial of a given number. Take the input from the user.
+
+
+
+Input as :
+
+Enter a number : 5
+
+
+
+Output as :
+
+Factorial of 5 : 120
+Sample Input
+5
+Sample Output
+Factorial of 5 : 120
+
+Answer:
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i;
+    long long fact=1;
+    scanf("%d",&n);
+    
+    if(n<0)
+    {
+…        {
+            fact=fact*i;
+        }
+        printf("Factorial of %d : %d",n,fact);
+    }
+    
+    return 0;
+}
+
+
+
+Write a C program to find the alternate digit sum is same or not.
+
+
+
+Example-1 as: 12345
+
+
+
+1+3+5=9
+
+2+4=6
+
+
+
+Output as: Alternate digit sum is not same.
+
+
+
+Example-2 as: 12122
+
+1+1+2=4
+
+2+2=4
+
+
+
+Output as : Alternate digit sum is same.
+Sample Input
+12122
+Sample Output
+Alternate digit sum is same.
+
+
+Answer:
+
+#include<stdio.h>
+
+int main()
+{
+    int n,digit;
+    int oddSum=0,evenSum=0,pos=1;
+
+    scanf("%d",&n);
+
+    while(n>0)
+…        printf("Alternate digit sum is not same.");
+    }
+    
+    return 0;
+}
+
+
+
+Counting Non-Divisible Numbers
+[Title:- "Counting Non-Divisible Numbers Before Divisible-by-Five Exit"] [while-loop]
+--------------------------------------------------------------------------------------
+
+Write a C program that asks the user to enter numbers repeatedly. If the entered number is divisible by 5, the program should terminate. Before termination, the program should print the count of numbers entered that are not divisible by 5.
+
+Test-Case-1 :-
+---------------
+Input :- 4, 6, 7, 10
+--------
+Output :- Count = 3
+---------
+
+Test-Case-2 :- [Valid]
+----------------------
+Input :- 2, 8, 15
+--------
+Output :- Count = 2
+---------
+
+Test-Case-3 :- [Invalid]
+------------------------
+Input :- -5
+--------
+Output :- Error: Only positive numbers are valid.
+---------
+Sample Input
+ 4, 6, 7, 10
+Sample Output
+Count = 3
+
+Answer
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    int count=0;
+    while(1)
+    {
+        scanf("%d",&n);
+        if(n%5==0)
+…    }
+    
+    return 0;
+}
+
+Write a C program to add all the digits present in a given number until it became a single digit. Develop it by using while loop.
+
+[if the number is 5678, sum of digit =5+6+7+8=26 , again sum of digit of the sum : 2+6=8] 
+
+
+
+Input as : 5678
+
+
+
+Ouput as : 8
+Sample Input
+5678
+Sample Output
+8
+
+answer
+#include<stdio.h>
+
+int main()
+{
+    int n,rem,sum=0,ans=0;
+
+    scanf("%d",&n);
+    if(n<0)
+    {
+        printf("Negative value not allowed.");   
+…
+    printf("%d",ans);
+
+    }
+    return 0;
+}
+
+ArmstrongNumberInRange
+Write a C program to find all Armstrong numbers between 100 to N.
+
+A three digit number is called Armstrong number if sum of cube of its digit is equal to number itself.
+
+E.g.- 153 is an Armstrong number because (1)^3+(5)^3+(3)^3 = 153.
+Sample Input
+200
+Sample Output
+Armstrong numbers between 100 and 200 are:
+153
+
+Answer:
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,p,i=100,sum;
+
+    scanf("%d",&n);
+    if(n<0)
+    {
+…        }
+        i++;
+    }
+    }
+
+    
+    return 0;
+}
+
+Automorphic Number
+
+(USING FOR LOOP)
+------------------
+Write a C program to check whether the given number is an automorphic number or not.
+
+Automorphic Number :-
+---------------------
+An automorphic number is a number whose square ends with the same digits as the number itself.
+
+For example :-
+--------------
+
+5, 6, and 25 are automorphic numbers.
+
+-> 5×5=25 → The original number is 5 (single digit), and the last digit is also 5.
+-> 6×6=36 → The original number is 6 (single digit), and the last digit is also 6.
+-> 25×25=625 → The original number is 25 (double digit), and the last two digits are 25.
+
+Test-Cases-1 :- Positive Automorphic Number
+---------------
+Input :-
+--------
+Enter a number: 5
+
+Expected Output :-
+------------------
+5 is an automorphic number.
+
+Explanation: The square of 5 is 25, and the last digit is 5, which matches the original number.
+------------
+
+Test-Cases-2 :- Negative Automorphic Number
+---------------
+Input :-
+--------
+Enter a number: -7
+
+Expected Output :-
+------------------
+7 is not an automorphic number.
+
+Explanation: The square of 7 is 49, and the last digit is 9, which does not match the original number.
+------------
+
+Test-Cases-3 :- Zero Input
+---------------
+Input :-
+--------
+Enter a number: 0
+
+Expected Output :-
+-------------------
+0 is an automorphic number.
+
+Explanation: The square of 0 is 0, and the last digit is also 0, which matches the original number. Therefore, 0 is an automorphic number.
+Sample Input
+5
+Sample Output
+5 is an automorphic number.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,count=0;
+    scanf("%d",&n);
+    int m=n;
+
+    int power=1;
+    while(n!=0)
+…    {
+        printf("%d is an automorphic number.",m);
+    }
+    else
+    {
+        printf("%d is not an automorphic number.",m);
+    }
+    return 0;
+}
+
+palindrome or Not
+[Title:- Armstrong or Not]
+--------------------------
+
+Write a C program to check whether a given integer is a palindrome. A number is considered a palindrome if the reverse of the number is equal to the original number.
+The program should prompt the user to enter an integer, reverse the number, and then compare it to the original number to determine if it is a palindrome.
+
+Valid Test Cases :-
+-------------------
+Test-Case-1 :-
+--------------
+Input: 121
+Output: 121 is a palindrome.
+
+Test-Case-2 :-
+--------------
+Input: 0
+Output: 0 is a palindrome.
+
+Test-Case-3 :-
+---------------
+Input: 12321
+Output: 12321 is a palindrome.
+
+Test-Case-4 :-
+--------------
+Input: 12345
+Output: 12345 is not a palindrome.
+
+Sample Input
+121
+Sample Output
+121 is a palindrome.
+#include<stdio.h>
+
+int main()
+{
+    long n,m,rev=0,rem;
+    scanf("%ld",&n);
+
+    m=n;
+
+    while(n!=0)
+…    {
+        printf("%ld is not a palindrome.",m);
+    }
+    return 0;
+}
+
+Perfect Number
+Write a C program to check whether a given number is a Perfect Number or not.
+
+A Perfect Number is a positive integer that is equal to the sum of its proper divisors (excluding the number itself).
+Example: 6 → 1 + 2 + 3 = 6, 28 → 1 + 2 + 4 + 7 + 14 = 28
+Sample Input
+6
+7
+Sample Output
+Perfect Number
+Not a Perfect Number
+
+Answer:
+#include<stdio.h>
+
+int main()
+{
+    int n,m,sum=0;
+    scanf("%d",&n);
+    if(n<0)
+    {
+        printf("Invalid Number");
+        return 0;
+    }
+    
+    for(int i=1;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            sum+=i;
+        }
+        
+    }
+    if(sum==n)
+    {
+        printf("Perfect Number");
+    }
+    else
+    {
+        printf("Not a Perfect Number");
+    }
+return 0;
+}

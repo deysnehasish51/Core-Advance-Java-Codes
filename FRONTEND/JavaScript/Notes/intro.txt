@@ -1,0 +1,177 @@
+Javascript:
+-Javascript is a high level interpreted programming language which is used to make web pages more interactive and dynamic. It adds functionality 
+and behaviour to web pages.
+-Javascript is a synchronous and single threaded language.synchronous means it runs line by line .Single threaded means one task at a time.
+-Javascript can be client side(broswer based) or server side (Node JS.). We will discus here broswer based.
+-Every broswer contains an engine called "JS Engine" which runs Javascript. For google chrome, js engine is v8.
+
+History:
+-In 1995, Breden Eich of Netscape developed a programming language combining the features of java and python made a new called "livescript".
+-It was initially live script but to acquire the popularity of "JAVA" renamed as "Javascript". Later multiple broswer brought different script 
+such as JScript,bscript,coffeescript etc...,The standards were passed to all browser to maintain similar script, "standard Javascript". Rules 
+and standard are maintained by ECMASCRIPT. Recent version of JS is "ES15'. 
+-There are lot of otehr technologies or libraties that are popular to make js more easy. They are JQuery,React, Vue,backbone,Next,Nest,Express,
+Node etc...
+
+How to Include JS into HTML ?
+-JS can be included to HTML using two ways 
+    1.internal Javascript: It is used to add  JS to HTML withing "script" element.
+    2.External Javascript: It is used to add external Js into HTML using "script" element with "src" attribue.
+        ex-<script src="path"></script>
+-we can debug JS code uisng console. 'console' is part of the browswer developer tools witch are used to debug and understand the web page well
+'console' can run JS. so, initially will print in console untl JS basic were done.
+
+Comments in Javascript:
+-In Javascript there are two types of comments such as 
+    -Single line comments: // comments followed by double slash
+    -Multi line comments: comments with /* and */
+
+Variables in Javascript:
+-Variables or Identifiers are used to assign/store different values. They are defined using "var","let"and "const".
+    1.Var:
+    -var is a funciton scoped variable which is used throughout the funciton.it can be redeclared, reassigned and alos can be used 
+    before declaration.
+    -it is old way of declaring variable in Javascript.
+    2.Let & Const:
+    -Let and const are block scoped variables. They can be used only in the block. They can not be redeclared and are not possible 
+    to access before declaration. let cna reassign but const cannot.
+
+    e.g:console.log("Hello....")
+        console.log(a);
+        //using Var
+        var a=25;
+        console.log(a);
+        var a=16;//redeclare
+        a=50;//reassigned
+        console.log(a);
+        //console.log(b); Error can not use before inicialization.
+        //using let and const
+        let b=10;
+        console.log(b);
+        b=560;
+        console.log(b);
+
+
+        const c=40;
+        //c=560 constat variable cannot be changed
+        console.log(c);
+
+Basic Function in JS :
+-There are three basic funcions default provided by browser are 
+  i. alert(): it is used to show an alert message
+            ex: alert("Some Message")
+  ii.confirm(): it is used to get confirmation from user and return ture or false.
+                ex: confirm("Are you Sure ?")
+  iii. prompt(): it is used to get user input. it always receives them as string.
+                ex: prompt("Enter Data")
+
+Question:
+1.What is the diffrence between var,let and const.
+Answer: 
+
+2.Explain the use and advantages of Javascript.
+3.Write a Javascript code to print multiplication o two numbers in internal amd external Js.
+
+Datatypes in Javascript:
+- Javascript is a dynamic typing programming languages.it means in Js, there is no fixed datatype for a variable. Based on the value 
+  it stores it changes the datatype.
+-The datatypes are divided in to two types:
+    1.Primitive Datatypes
+    2.Non Primitive Datatypes / Reference Datatypes
+
+1.Primitive Datatypes: 
+-These datatypes stores the value and uses only value for comparision.
+-Most widely used Primitive datatypes are number, string ,boolean,undefined,null.
+
+2.Non Primitive Datatypes:
+-These datatypes stores the reference with elements, also called reference datatypes.
+-Most widely used non Primitive datatypes are funcions, arrays, objects.
+
+    i.number: number is the datatypes assigned to any numerical  values.
+              ex-let a=123 , b=Infinity ,c= -Infinity;
+              -In case of expected numer but got another value, it ist considered as NaN(Not a Number).
+              ex-5-"snehasish" (NaN)
+              -Type of NaN(Not a Number) is  number.
+              -Numbers have some default funcion such as
+                i.toFixed(): it check the value after the decimal and if number is greater than 5 than increse the last digit by 1.
+                            Ex-let a=14.258369
+                                console.log(a.toFixed(2)) //14.26
+                ii.toPrecision():it check the value from the first position and if number is greater than 5 than increse the last digit by 1
+                                Ex-let a=14.258369
+                                console.log(a.toPrecision(3)) //14.3
+                iii.toString(): it convert a given  number to binary if value is 2 if 8 octal and if 16 hexadecimal
+                                Ex- let a=25;
+                                    console.log(a.toString(2)) //11001
+                There are some Math methods in JS
+                iv.sqrt(): console.log(Math.sqrt(25))//5  square root of an numeber
+                v. cbrt(): console.log(Math.cbrt(8))//2   cuberoot of a number
+                vi.pow(): console.log(Math.pow(2,3))//8     power of a number
+                vii.abs(): console.log(Math.abs(-10))//10   give absolute number
+                viii.ceil():console.log(Math.ceil(1.4))//2  round up the numeber to next number
+                ix.floor():console.log(Math.floor(-1.2))//-2    round up the number to previous number
+                x.round():console.log(Math.round(2.53))//3  give round number if less than 5 same number and greater than 5 next number.
+                xi.random():console.log(Math.random())      generate numbers between 0 to 1.
+                xii.min():console.log(Math.min(1,2,3,4)) //1 min value between numbers
+                xiii.max():console.log(Math.max(6,3,8,9))    //9 max value between numbers
+
+Q. Write a JS code to Print random number between 1 to 6 on each time.      
+    Answer: cosole.log(Math.ceil(Math.random()*6));
+Q.Write a Js code to print random number between 7 to 14 on each time.
+    Answer: console.log(Math.round(Math.random()*7+7));
+            console.log(Math.round((Math.random()+1)*7));
+
+Q.Explain datatypes in Js and Explain dynamic datatyping.
+    Answer: There are 5 types of datatype in Javascript number,string,null,undefined,boolean and there three non Primitive datatype arrays,funcion,objects.
+            -In Javascript there is no predefined types of datatype like in other programming language you have to just give let,var or const and it will 
+             automatically takes its value type so Javascript is dynamic datatyping.
+
+Q.Explain methods toFixed(),toPrecision() and toString().
+    Answer: toFixed() is used to  check the value after the decimal and if number is greater than 5 than increse the last digit by 1.
+            -toPrecision() is used to check the value from the first position and if number is greater than 5 than increse the last digit by 1
+            -toString() is used to convert a given  number to binary if base value is 2 ,if 8 octal and if 16 hexadecimal
+
+Q.Wwrite a JS program to generate 4 digit random OTP.
+    Answer:console.log(Math.round(Math.random()*9000+1000))
+
+Strings: 
+-strings are used to store alphanmerical values (alpahbets+numbers). strings can be respresented in three ways 
+    i. single or double quotes:
+        let a="raj" , b='snehasish';
+        console.log(typeof a) //String
+    -There is no diffrence between single and double quotes in Javascript based on uses or nested string we use each one.
+
+    ii.Backticks:backtiks usaes for strings in js results dyanmic strings which can print dyanmic values wihtout breaking the strings.
+    These type of strings re also called "temlate string".
+        let cost=20;
+        console.log(`The cost of an apple is ${cost}`);
+
+There are so many default funcion for strings such as:
+    1.str.length()--returns the total no of characters in given string.
+    2.str.toUppercase()--returns the upercase converted String.
+    3.str.toLowercase()--returns the lowercase converted string.
+    4.str.startsWith(str1)--rerurns true or false weather str is starting with str1 or not 
+    5.str.endsWith(str1)--returns true of false wheather str is ending with str1 or not
+    6.str.indexOf('character')--returns index of first occurance of given character.
+    7.str.lastIndexOf('character')--returns index of last occurance of given character.
+    8.str.charAtr(index)--returns the character as specified index.
+    9.str.replace(oldstr,newstr)--replaces first occurance of old string with new string.
+    10.str.replaceAll(oldstr,newstr)--replaces all occurances of old stirng to new string.
+    11.str.concat(str1,str2)--returns the concatination of two strings (str1+str2).
+    12.str.trim()--uses to remove spaces from starting and ending of string.
+    13.str.split('delimeter')--cut the string based on the delimeter you give and return a array.
+
+
+boolean: it is used to stroe data in true or false. ture represents i1 and false represents 0;
+
+undefined: 'undefined' is the value assigned to the variable which are declared but not initialized.
+        -By default, Js takes all the variablees and function declarations to the top of the promfram callded ""Hoisting".
+         so thats why default values of those variables are 'undefined'.
+        -undefined and not defined is not same . 'not-defined' is an derror to not existance of a variable.
+
+null: null is the value of variables's ending. it is intentional absece of value. Whenever we want to gives 
+      variables with no value we can declare them as null.
+
+Q.What is template literal, Explain with an example.
+Q.Write a JS code to print number of letter 'p' in given syntax. "Poppins popup at popey's hand"
+Q.what is the diffrence between null and undefined.
+Q.what is hoisting.

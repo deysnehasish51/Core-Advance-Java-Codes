@@ -1,0 +1,94 @@
+Write a Java program to store salaries of 10 employees in an array and print the maximum salary.
+[Use for each loop]
+
+Input:
+[25000, 48000, 31000, 82000, 42000, 90000, 55000, 61000, 47000, 75000]
+
+Output:
+Maximum Salary = 90000
+
+Ques - 2
+------------
+Find the Student With Minimum Attendance
+[Use for each loop]
+
+Question:
+A class has attendance records of students stored in an integer array (out of 100 days).
+Write a Java program to find the minimum attendance and the student index.
+
+Input:
+[87, 65, 92, 45, 76, 58, 90]
+
+Output:
+Minimum Attendance = 45 (Student Index = 3)
+
+Ques - 3
+-----------
+Calculate the Average Age of Company Employees
+[Use for each loop]
+
+Question:
+Given an array of employee ages, calculate the average age.
+
+Input:
+[22, 25, 29, 31, 28, 33, 45, 39]
+
+Output:
+Average Age = 31.5
+
+Ques -4
+------------
+Display All Employee Names [Use for each loop]
+
+Question:
+You have an array of employee names. Display all names using a for each loop.
+
+Input:
+["Ravi", "Meena", "John", "Priya", "Suresh"]
+
+Output:
+
+Employee List:
+Ravi
+Meena
+John
+Priya
+Suresh
+
+Ques - 5
+------------
+Sum of Grocery Prices [Use for each loop]
+
+Question:
+A shop stores the prices of grocery items in an array.
+Write a Java program to calculate the total bill amount.
+
+Input:
+[45.50, 89.90, 120.00, 15.75, 60.40]
+
+Output:
+Total Grocery Price = 331.55
+
+
+Ques - 6
+-------------
+Count Employees With Salary Above 50,000 [Use for each loop]
+
+Question:
+From a salary array, count how many employees earn more than ₹50,000.
+
+Input:
+[45000, 78000, 52000, 33000, 92000]
+
+Output:
+Employees earning above 50000: 3
+
+Ques - 7
+-------------  
+Find Total Number of Students With Attendance Above 75% [Use for each loop]
+
+Input:
+[80, 55, 78, 92, 60, 40, 88]
+
+Output:
+Students With >75% Attendance: 4

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Management Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="logo">N</div>
+
+<p class="menu-title">MAIN MENU</p>
+
+<ul>
+<li onclick="loadPage('user')">User</li>
+</ul>
+
+<p class="menu-title">DATA MANAGEMENT</p>
+
+<ul>
+<li onclick="loadPage('student')">Student</li>
+<li onclick="loadPage('employee')">Employee</li>
+</ul>
+
+<div class="sidebar-footer">
+© Dashboard v1.0
+</div>
+
+</div>
+
+
+<div class="main">
+
+<div class="header">
+
+<div class="brand">
+User Management System
+<span class="live">LIVE</span>
+</div>
+
+<nav class="nav-links">
+<a onclick="loadPage('home')">Home</a>
+<a onclick="loadPage('about')">About Us</a>
+<a onclick="loadPage('feedback')">Feedback</a>
+</nav>
+
+<div class="profile">SD</div>
+
+</div>
+
+<div id="content"></div>
+
+<footer>
+System Footer Information
+</footer>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

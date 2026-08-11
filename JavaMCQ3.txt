@@ -1,0 +1,221 @@
+Ques-1
+____________
+What are the types of Integer Literals in Java?
+
+A) Decimal Literals
+B) Octal and Hexadecimal Literals
+C) Binary Literals
+D) All the above
+
+Answer-All the above
+__________________________________________________________________
+Ques-2
+__________
+
+Choose correct examples of decimal literals in Java.
+A) int a = 12345;
+B) int a = 12_3__5;
+C) long a = 987____654_3__21L;
+D) All the above
+
+Answer- All the above
+__________________________________________________________________
+Ques-3
+_____________
+
+Choose the correct example of Octal Literal in Java?
+
+A) short = 0564;
+B) int = 076__45_2;
+C) int = 0______11;
+D) All the above
+
+Answer- All the above
+__________________________________________________________________
+
+Ques-4
+_______________
+
+What is the precision after decimal points offered by a float data type in Java?
+
+A) 3 digits
+B) 6 digits
+C) 10 digits
+D) 15 digits
+
+Answer- 6 digits
+___________________________________________________________________
+Ques-5
+____________
+ What will be the output of the following Java code?
+
+    class CharIncrement
+    {
+        public static void main(String args[])
+        {
+            char c1 = 'D';
+            char c2 = 84;
+            c2--;
+            c1++;
+            System.out.println(c1 + " "  + c2);
+        }
+    }
+A) E U
+B) U E
+C) E S
+D) S E
+
+Answer -E S
+
+____________________________________________________________________
+Ques-6
+__________
+What is the output of this Java snippet?
+int a = 0b111;
+System.out.println(a);
+A) 111
+B) 7
+C) 8
+D) Compiler error
+
+Answer- 7
+___________________________________________________________________
+Ques-7
+_______________
+
+Which literal is used to Create a Values of the integral types byte, short, int, and long ?
+
+A.Long
+B.Byte
+C.Double
+D.Integer
+
+Answer: Interger
+_____________________________________________________________________
+Ques-8
+___________
+In java programming, You can create binary literal in ________.
+
+A.Java SE 6 and later
+B.Java SE 7 and later
+C.Java SE 5 and later
+D.Java SE 1 and later
+
+Ans : Java SE 1 and later
+
+Ques-9
+_______________
+What does the expression float a = 35f/ 0 return?
+
+A) 0
+B) Not a Number
+C) Infinity
+D) Error
+
+Ans : Infinity
+__________________________________________________________________________
+Ques-10
+_____________
+Which of the following is a valid Java hexadecimal literal?
+A) 10
+B) 0b1010
+C) 0x10
+D) "A"
+
+Answer-Ox10
+__________________________________________________________________________
+Ques-11
+______________
+Which of the following is a valid Java floating-point literal in scientific notation?
+A) 3.14
+B) 6.02e23
+C) 10L
+D) "2.718"
+
+Answer- 6.02e23
+
+Ques-12
+_______________
+
+class ThinkWisely{
+    public static void main(String[] args) {
+        int i;
+        for(i=0;i++<=10;)
+        System.out.print(i);
+    }
+}
+
+A. Error
+B. 1
+C. 12345678910
+D. 1234567891011
+
+Ans - 1234567891011
+
+______________________________________________________________________
+Ques-13
+_________
+
+Integer literal containing value "F" comes under ____ system.
+
+A.Binary Number
+B.Hexa Decimal Number
+C.None of these
+D.Octal Number
+
+Ans - Hexa Decimal Number
+
+_______________________________________________________________________
+Ques-14
+________
+
+Which of these can not be used for a varriable name in java?
+
+A)identifier
+B)keyword
+C)identifier & keyword
+D)none of the mentioned
+
+Ans - keyword
+__________________________________________________________________________
+Ques-15
+_________
+
+An Octal number is Java is represented with a leading ____?
+
+A) O (Alphabet)
+B) 0 (ZERO)
+C) 0x
+D) 0X
+
+Ans -  0
+__________________________________________________________________________
+
+Ques-16
+_______
+
+Underscore symbols in literal numbers are introduced with which version of Java?
+A) JDK 5
+B) JDK 6
+C) JDK 7
+D) JDK 8
+
+Ans - JDK 7
+__________________________________________________________________________
+Ques-17
+________
+public class Test {
+
+    public static void main(String[] args) {
+        for(int i = 0; i < 5; i++) {
+            System.out.print(i);
+        }
+    }
+}
+
+A. 01234
+B. No Output
+C. 00000
+D. 43444546
+
+Ans - 01234

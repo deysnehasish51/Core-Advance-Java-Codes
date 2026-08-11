@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container
+{
+    margin-top: 200px;
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 550px;
+    height: 300px;
+    font-weight: 700;
+    border: 1px solid #111;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px gray ;
+    background-color: white;
+}
+.container h1{
+    font-size: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.container span{
+    font-size: 12px;
+    color: #111;
+}
+
+.button
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#blue
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+}
+#red
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+}
+
+#green
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: green;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+}
+#yellow
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+#purple
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: purple;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+#grey
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+#white
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 10px #111;
+    transition: transform 0.3s ease-in-out;
+
+}
+#black
+{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 1px 1px 10px #111;
+    transition: transform 0.3s ease-in-out;
+}
+
+#blue:hover, #red:hover, #green:hover, #yellow:hover, #purple:hover, #grey:hover, #white:hover ,#black:hover
+{
+    transform: scale(1.1);
+}

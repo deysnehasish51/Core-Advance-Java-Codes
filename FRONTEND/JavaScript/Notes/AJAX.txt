@@ -1,0 +1,54 @@
+AJAX(Asynchronous Javascript):
+
+    -AJAX is used to make js run based on preferences. it allows page ot laod specific section without reloading whole page contents. 
+     By default Js is sunchronous language but DOM, events, callbacks,can make it Asynchronous.
+
+Timers: 
+
+    -Braoswer provides default funciton to make timers work such as:
+
+        setTimeout(callback,time in ms) : it accepts a callback adn time in ms, once the specific time is over, 
+                                        it executes the funciton.
+
+            e.g: setTimeout(()=>console.log("hello world"),2000);
+
+            it prints hello world after 2 sec in console.
+
+        we can even stop setTimeout() to work by using clearTimeout(variable);
+
+        let x = setTimeout(()=>
+        {
+            console.log(`OTP is : ${Math.round(Math.random()*100000)}`)
+        },10000);
+
+        clearTimeout(x);
+
+        but setTimeout() executes only one time. in case if we want multiple we can use setInterval().
+
+        setInterval(callback,time in ms) : it also accepts callback and executes it for every time the interval time is over. it becomes a loop.
+
+        setInterval(()=>
+        {
+            console.log("hi");
+        },1000);
+
+        //reverse counter till 10
+
+        let c =10;
+
+        let counter=setInterval(()=>{
+            c--;
+            console.log(c);
+            if(c==0)
+            {
+                clearInterval(counter);
+            }
+        },1000);
+
+        //print time 
+
+        setInterval(()=>{
+            let dt = new Date();
+
+            doucument.querySelector('.learntocodeh1').textContext=dt.toLocaleTimeString();
+        },1000);

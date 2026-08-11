@@ -1,0 +1,18 @@
+Dom Manipulation:
+
+    -It is used to manipulate elements using document object
+
+        element.textContent-->it is used to update text inside the elements.
+        element.innerText--->it is similar to text textContent but it also observes CSS.it will not accept the display none in CSS.
+        element.innerHTML--->it is used to update HTML inside the element.
+        element.className ---> it is used to provide a single class name to elements.
+        element.classList ---> it is used to add or remove or toggle the classnames to element.
+        element.style ---> it is used to trigger CSS styles of element and manipulate them.
+
+DOM Creation:
+
+    - it is used to add/Create elements to Dom.we can use methods velow like
+        
+        createElement('element name') : it is used to create the element.
+        appendChild(elementName) : it is used to add elements.
+        append(elements) : it used to add multiple elements.

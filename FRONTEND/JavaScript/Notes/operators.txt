@@ -1,0 +1,59 @@
+Operators:
+----------
+
+-These are usede to perform operatiojns on variables and values.
+
+    -Arithmetic Operators : +, -, *, /, %, ++, --
+    -Assignment Operators : >, <, <=, >=, ==, ===
+    Ex- let a=2,b='2';
+
+        console.log(a==b);//ture
+        console.log(a===b);//false it also compares data type
+        console.log(a!=b);//false
+        console.log(a!==b);//true
+        console.log(a>b);//false
+        console.log(a<b);//true
+        console.log(a>=b);//false
+        console.log(a<=b);//true
+    
+    -Logical Operators: &&,||,!
+
+    --&& is true if both the statements are true.
+    --|| is ture if any one of the statement is true,
+    --! true when statement is false.
+
+    -Assignment Operators: =,+=,-=,*=,/=,**=,%=
+
+    -Increment & Decrement Operators: ++,--
+    --These Operators are used to increase or decrease the value by one .
+    --The Increment or Decrement have two variations Pre and Post.
+
+       -- Pre -first update the value then assign the value.
+       -- Post - first assign the value then update the value.
+
+       Ex- a=5;
+            let b=++a; //6
+
+            console.log(b,a) //6,5
+    
+    -Ternary Operators:
+    --It is used to validate a condition and check different statement based on condition(true/false).
+    --It uses three operands so called Ternary Operators.It uses symbol '?' and ':'.
+
+    Ex- let a=5,b=10;
+
+        let c=(a>b)?"Good":"Bad";
+
+Type Casting :
+--------------
+    --The conversion of one datatype to another data type is called type casting.
+    --There are two types of typecasting such as 
+            i.Implicit typecasting
+            ii.Explicit typecasting
+    --Implicit typecasting means types are converted automatically based on operations
+    --Explicit typecasting means types are converted by force using methods like toString(),
+      Wrappers are like Number(),String(),Boolean() etc.., + is also unary operator which is used to convet string to integer.
+
+      Ex- 5+ + '4' ==>9
+
+            5+ Number('4') ==>9

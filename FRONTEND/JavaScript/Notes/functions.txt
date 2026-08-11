@@ -1,0 +1,60 @@
+Functionns  is JS:
+
+    -Functionns in javascript are blocks of code designed to perform a particular task/ The are executed when "called" or "invoked".
+     Functions can teke inputs, called parrameters and can return outputs.
+    -functions are used for 
+        --reusable code
+        --divide the code into smaller, logical parts.
+    -syntax:function function_name(parameters)
+    {
+        //body
+    }
+    functions() //function call
+
+    Eg: create a function display which prints "hello world" in console and call it.
+
+   - Functions parameters need not to have declarations like let, var, const as they are local variables(function scoped) 
+    and will not contain any datatypes since js is dynamically typed.
+    function sum(a,b)
+    {
+        console.log(a+b);
+    }
+    sum(3,4);
+   -functions can eve return the vllues using 'return' keyword.
+   function sum(a,b)
+    {
+        return a+b;
+    }
+    let res=sum(5,3);
+    console.log(res);
+
+    -Functions  can have optional parameters have default value undefined when its sargument is not passed when invoked.
+    
+    we can also undefined with some default values like
+
+    function sum(a,b,c=1)
+    {
+        console.log(a,b,c)
+    }
+    sum(5,3);
+
+    Rest parameter : jin case of more values are passed and need to accept them all, we use rest parameter.it is denoted by three dots. 
+    it is always the last in parameter's list. it accepts parameters in the form of array.
+
+    function sum(a,b,...c) //only use three dots
+    {
+        console.log(a,b,c)
+    }
+
+    sum(5,6,7,8,9,3)
+
+    here a is 5, b is 6 and c is[ 7,8,9,3]
+
+    Spread Operator: it is used to separate the array values . it is also denoted by three dots(...)
+
+    Q. write a function that checks wheather give number is positive or negetive and prints it.
+    Q. write a function that creates short code for every name for ex: short_code ("Snehasish Dey") Output: SD
+    Q. write a function that accepts any number of parameters prints their product.
+    Q write a function to find factorial of given number.
+
+    

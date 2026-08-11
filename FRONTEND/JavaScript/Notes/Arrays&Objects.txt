@@ -1,0 +1,122 @@
+Arrays: Arrays are use to store a collection of element .it store each element with an index vallue (refernce of value )
+.eachindex starts with 0
+ex: let arr=[5,6,7,8]
+5|6|7|8 ---->element
+----------
+0 1 2 3 ---->index
+
+
+Arrays are muteble (operation of Arrays might change the original arr.)
+
+Default method in arr are :
+it is find to the total element of arr.length;
+-->if last index is 100 then length will become 101.
+indexOf('ele')-- return the index of last occurance of given element 
+
+push (element)-->it is add element at the end of the arr.
+
+pop()---> it is the used to remove the last element.
+
+unshift (element)--> it use to add the element at the sting of the Arrays
+
+shift()--->it is use to remove the string element /first element
+
+splice(string_index_number,deleteCount,inserting_element)---->it starts for spesific index and delete.
+ based on count (or all if it is not present).also adds elements at spesific index.
+
+ let friends=["sheldon","ross","rachel"]
+---remove "penny"and add "monica"
+ans-->friends.pop();friends.push("monica")
+----remove "sheldon"and add "joey"
+ans---> friends.shift();friends.unshift("joy)
+
+
+*forEach(callback): it is used to itrate each and every element of Arrays .
+and pass element and index to the callback function. forEach is a void function so,it cannot
+return the value.
+  arrayName.forEach(callback function(element,index){
+    //body
+  })
+
+ * map(callback):it is also used to similarly of forEach but it return value for every element of
+  given array.
+  arrayName.map(callback function(element,index){
+    //body
+  })
+
+ * filter(callback): it is also used to similar to map but it return condition "true".
+    arrayName.filter(callback function(element,index){
+        //body
+    })
+
+ * includes: includes to use to check whether given element is existed in array or not .if it is 
+             existed,it will be return true else false .
+             les x=arr.includes("deba")
+
+  find(callback): it is used to check the first element that satisfies the return condition and return it.
+                 Arrayname.find(function(ele,ind){
+                    //logic
+                 })
+
+findindex(callback): it is to used to check the first element that satisfies the return condition 
+                    and return theindex
+                    Arrayname.findindex(function(ele,ind){
+                        //logic
+                    })
+
+some(callback): it is used to check atlest one of the element satisfies the return condition and return
+                and return true/false based on it.
+                 Arrayname.findindex(function(ele,ind){
+                        //logic
+                 })
+
+ Every(callback):  it used to check whether the every element of array satisfies the condition
+                  or not and return true/false based on it.
+
+sort(callback):  sort to use sort based alphabetical order but in case of number we can pass callback
+        it follows bubble sort kind of technique and ir=t calback return negetive it moves forward to 
+        enda=s it swap th element and continues
+           ascending order:arr.sort((a,b)=>b-a)
+           descending order: arr.sort((a,b)=>b-a)
+     reduce(callback,initial_value): reduse is the used to apply values with their previous one.
+
+
+Objects: Object is a real time entity. object contain properties and method.class it is a collection of object.
+
+let student={
+        name:"Snehasish",
+        email:"datay@gamil",
+        id:23,
+        mobNo:9870568575,
+        address:odisha
+}
+
+console.log(obj.name,obj['name'])
+
+-Objects can even have methods and those methods need to be called using only that object.
+-The current calling object in methods is representd by 'this' key word (arrow function can not recognize this keyword).
+
+    Ex: let obj ={name:"Snehasish",age:23,fun:function(){console.log("Hi" + this.name)}}
+        
+        obj.fun();// Hi Snehasish
+
+Object methods:
+    -Objects have many method such as:
+
+    1.Object.keys(objectname)--iterates all the object keys
+    2.Object.values(obj)--iterates all the object values
+    3.Object.seal(objectname)--with this we can not add or delete object properties but can modify the properites.
+    4.Object.freeze(objectname)--with this we can not add or delete or update the properites.
+    5.Object.assign(objectname)-- with this we can assign values of one object to another object.
+    6.Object.create(objectname)-- it is used to create an object with a refernce of another object. They both are connected by 'prototype'.
+                                  It  provide a default way for child object to call parent objects properites called "Prototype Inheritance".
+
+    When data is passing between client and server we need to convert them as JSON(java Script Object Notation).
+    -To convert object to JSON
+        JSON.stringigy(objectname)
+    -To convert JSON to object
+        JSON.parse(jsonname)
+
+    
+
+    

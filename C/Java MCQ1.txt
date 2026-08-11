@@ -1,0 +1,335 @@
+1. Who invented Java Programming?
+
+A. Guido van Rossum
+B. James Gosling
+C. Dennis Ritchie
+D. Bjarne Stroustrup
+
+Answer James Gosling
+
+2. In which year was Java developed?
+
+A. 1990
+B. 1991
+C. 1995
+D. 1998
+ Answer 1990
+
+3. Which of the following is not a Java feature?
+
+A. Object-oriented
+B. Portable
+C. Use of pointers
+D. Dynamic and Extensible
+ Answer: Use of pointers
+
+4. What does JVM stand for?
+
+A. Java Variable Machine
+B. Java Virtual Machine
+C. Java Verified Machine
+D. Java Visual Machine
+ Answer: Java Virtual Machine
+
+5. What is the extension of compiled Java bytecode files?
+
+A. .java
+B. .js
+C. .class
+D. .exe
+ Answer: .class
+
+6. Which of these is the correct way to start the main method in Java?
+
+A. public static void main(String args[])
+B. public static int main(String args[])
+C. static public void main(String[] args)
+D. Both A and C
+ Answer: Both A and C
+
+7. Java code is compiled into:
+
+A. Machine code
+B. Bytecode
+C. Assembly code
+D. Native code
+ Answer: Bytecode
+
+8. Which component is responsible for converting bytecode into machine code?
+
+A. Compiler
+B. Interpreter
+C. JVM
+D. JIT (Just-In-Time) Compiler
+ Answer: Interpreter
+
+9. Which of these is not a Java keyword?
+
+A. static
+B. Boolean
+C. void
+D. private
+ Answer: Boolean
+
+10. Which statement is true about Java?
+
+A. Java is platform dependent.
+B. Java is a low-level language.
+C. Java is platform independent.
+D. Java uses pointers explicitly.
+ Answer: Java is platform independent
+
+11. Which of the following is the correct way to define a class in Java?
+A. class Swiggy { }
+B. Swiggy class { }
+C. def class Swiggy { }
+D. Class = Swiggy { }
+Answer: class Swiggy { }
+
+12. What makes Java a simple programming language?
+
+A. It has no memory management
+B. It supports multiple inheritance directly
+C. It eliminates complex features like pointers
+D. It doesn’t require a compiler
+Answer: it eliminates complex features like pointers
+
+
+13. Why does Java not support pointers explicitly?
+
+A. To make the language faster
+B. To simplify memory management and ensure security
+C. Because pointers are not needed in programming
+D. To support operator overloading
+Answer: To simplify memory management and ensure security
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Level: Easy
+---------------
+
+Q1. Which type of language is Java?
+a) Compiled only
+b) Interpreted only
+c) Both Compiled and Interpreted
+d) Neither Compiled nor Interpreted
+Answer: Both Complied and Interpreted
+
+Q2. What does JDK stand for?
+a) Java Development Knowledge
+b) Java Data Kit
+c) Java Development Kit
+d) Java Deployment Kit
+Answer: Java Development Kit
+
+Q3. Which edition of Java is used for enterprise-level applications?
+a) Java SE
+b) Java EE
+c) Java ME
+d) Java FX
+Answer: Java EE
+
+Q4. The Java compiler converts Java code into which intermediate form?
+a) Machine Code
+b) Bytecode
+c) Assembly Code
+d) Source Code
+Answer: Bytecode
+
+Q6. Which of the following is NOT a Java edition?
+a) Java SE
+b) Java EE
+c) Java ME
+d) Java CE
+Answer: Java CE
+
+Q7. The Java compiler (javac) converts Java source code into:
+a) Machine code
+b) Bytecode
+c) Assembly code
+d) Binary code
+Answer: Bytecode
+
+Q8. Java is platform-independent because of:
+a) JVM
+b) JDK
+c) JRE
+d) OS
+Answer: JVM
+
+Q9. Which environment variable must be set to use Java from the command line?
+a) JAVA_VAR
+b) JAVA_PATH
+c) PATH
+d) CLASSPATH
+Answer: PATH
+
+Q10. Which of the following is NOT a feature of Java?
+a) Platform Independence
+b) Memory Management
+c) Operator Overloading
+d) Object-Oriented
+Answer: Operator Overloading
+
+Q11. Which command is used to check the installed version of Java?
+a) java -version
+b) javac -check
+c) java --show
+d) java -info
+Answer: java -version
+
+Q12. Which feature of Java ensures that the same program runs on different platforms?
+a) Object-Oriented
+b) Secure
+c) Platform Independent
+d) Robust
+Answer: Platform Independent
+
+----------------------------------------------------------------------------------------------
+                  Level: Medium
+                 ----------------
+Q1. Which of the following is NOT part of JDK?
+a) JVM
+b) JRE
+c) Java Compiler
+d) Operating System
+Answer: OS
+
+Q2. What is the difference between Java SE and Java EE?
+a) Java EE is for web and enterprise applications, while Java SE is forstand alone applications
+b) Java SE supports only desktop applications, while Java EE supports only mobile applications
+c) Java EE is a subset of Java SE
+d) Java SE contains advanced libraries compared to Java EE
+Answer Java EE is for web and enterprise applications, while Java SE is forstand alone applications
+
+Q3. In Java, which of the following is responsible for Just-In-Time (JIT) compilation?
+a) JVM
+b) JDK
+c) JRE
+d) JIT Compiler
+Answer: JIT Compiler
+
+Q4. Which statement is true regarding the installation of Java?
+a) JDK includes both JVM and JRE
+b) JVM needs to be installed separately from JDK
+c) JRE is enough to write Java programs
+d) Java does not require installation
+Answer: JDK includes both JVM and JRE
+
+Q5. Which Java feature prevents unauthorized access to code during execution?
+a) Platform Independence
+b) Security by ByteCodeVerifier
+c) Performance Optimization
+d) Robustness
+Answer: Security by ByteCodeVerifier
+
+Q6. How does the Java compiler optimize performance?
+a) By pre-compiling Java code into machine code
+b) By using Just-In-Time compilation
+c) By manually optimizing bytecode
+d) By skipping the compilation step
+Answer: By using Just-In-Time compilation
+
+Q7. What is the default installation path of Java in Windows?
+a) C:\Program Files\Java\
+b) C:\Windows\Java\
+c) C:\System32\Java\
+d) C:\Java\
+Answer: C:\Program Files\Java\
+
+Q8. Which of the following is NOT a feature of Java?
+a) Platform Independent
+b) Multi-threaded
+c) Pointers Support
+d) Secure
+Answer: Pointers Support
+
+
+Q11. What is the purpose of setting the PATH variable in Java installation?
+a) To locate the Java source files
+b) To locate the javac and java commands
+c) To store compiled Java files
+d) To enable debugging
+Answer: To locate the javac and java commands
+
+Q12. Which of the following commands is used to check the installed version of Java?
+a) java -version
+b) javac -v
+c) checkjava
+d) version -java
+Answer: java -version
+
+Q13. How does Java achieve high performance?
+a) Using a fast compiler
+b) By using Just-In-Time (JIT) compilation
+c) By using low-level memory management
+d) By running directly on the hardware
+Answer: By using Just-In-Time (JIT) compilation 
+
+
+----------------------------------------------------------------------------------------
+                          Level: Hard
+             ---------------
+Q1. What will happen if a Java program is compiled with JDK 11 but executed using JDK 8?
+a) The program will run normally
+b) The program will throw a runtime exception
+c) The program will not run due to bytecode incompatibility
+d) The program will execute but with limited functionality
+Answer: The program will execute but with limited functionality
+
+Q2. Which of the following is NOT true about the Java Compiler(javac)?
+a) It converts source code into bytecode
+b) It can perform optimizations on the code
+c) It runs Java applications
+d) It enforces Java syntax rules
+Answer: It can perform optimizations on the code
+
+Q4. How does the Java Virtual Machine (JVM) differ across platforms?
+a) JVMs are platform-independent and the same across all OS
+b) Each platform has its own specific JVM implementation
+c) JVM does not depend on the operating system
+d) JVM must be installed separately for different Java programs
+Answer: Each platform has its own specific JVM implementation
+
+Q5. What happens if you run a Java program without JRE installed?
+a) The program runs normally
+b) The program will not compile
+c) The program will not execute due to missing runtime libraries
+d) The program will execute but with reduced performance
+Answer: The program will not execute due to missing runtime libraries
+
+
+Q7. Which of the following statements about Java installation is TRUE?
+a) JRE is required to compile Java code
+b) JDK includes tools such as javac, jar, and javadoc
+c) The javac command is used to run Java programs
+d) Java programs can be executed without JVM
+Answer: JDK includes tools such as javac, jar, and javadoc
+
+Q8. In which directory of the JDK installation is the javac compiler found?
+a) JDK/lib
+b) JDK/bin
+c) JDK/src
+d) JDK/classes
+Answer: JDK/bin
+
+Q11. How does Java’s garbage collection improve performance?
+a) By manually deallocating unused memory
+b) By allowing the developer to free memory
+c) By automatically identifying and reclaiming unused objects
+d) By increasing memory allocation speed
+Answer: By automatically identifying and reclaiming unused objects
+
+
+Q17. Which of the following features makes Java secure?
+a) Use of pointers
+b) Strong memory management and bytecode verification
+c) Direct access to hardware resources
+d) Manual memory allocation
+Answer: Strong memory management and bytecode verification
+
+Q20. Which Java tool is used to generate API documentation?
+a) javac
+b) javadoc
+c) java
+d) jar
+Answer: javadoc

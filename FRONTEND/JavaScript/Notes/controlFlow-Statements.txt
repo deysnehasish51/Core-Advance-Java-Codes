@@ -1,0 +1,218 @@
+Control Flow statements in Javascript:
+
+These statements that control the flow of executionm in a program based on certain conditions.
+
+i.Decision Making Statements:
+
+    -if statement
+    -if....esle statement
+    -else if statement
+    -swich statement
+
+ii.Looping Statements:
+    -
+    -for Loop
+    -while Loop
+    -do while Loop
+
+
+i.Decision Making Statements: 
+    -These staements allows yyou to execure different blocks of code based on certain conditions.
+      a. if staement:
+
+            -Thie if staement executes a blcik of code if aspecified condition is ture.
+
+                syntax: if(condition)
+                {
+                    //------------
+                }
+            
+            Ex- let age=18;
+
+                if(age>=18)
+                {
+                    console.log("You are eligible for vote.");
+                }
+
+      b.if....else Statements:
+
+            -The if...else staement executes one blok of code if a condition is ture and anotehr block 
+             of code if the conditionis false
+
+                Syntax: 
+                if(condition)
+                {
+                    //-------
+                }
+                else{
+                    //----------
+                }
+
+            Ex- let age=16;
+
+                if(age>=18)
+                {
+                    console.log("You are eligible for vote.");
+                }
+                else{
+                    console.log("You are not eligible for vote.");
+                }
+
+      c. else if ladder Statements:
+
+            -The else if ladder allows you to test multiple conditions in sequence.
+
+                Syntax:
+                if(condition)
+                {
+                    //---------
+                }
+                else if(condition)
+                {
+                    //-----------
+                }
+                else
+                {
+                    //------------
+                }
+
+      d. switch staement:
+
+            -The switch statement ececutes one block of code among many based on teh value of an expression.
+
+                Syntax:
+
+                switch(expression)
+                {
+                    case 1: 
+                    /-----
+                    break;
+
+                    case 2:
+                    //------
+                    break;
+
+
+                    default:
+                    //--------
+
+                }
+
+
+Q.  WRITE age  js code wheater given year is leap year or not
+Q. write a js code to print day of the week based on its Number (monday=1....)
+Q. write a js code to generate a random number between 1 to 10 user have to input one numbeer 
+   if both matches user won else it prints wheater user value is greater than or less that generated one.
+
+
+Loops:
+
+    - loops are used to iterate certain statements until aspedific condition is false. 
+      it execuetes the body when condition is true and keeps on executing until the condition is false. 
+      one execution is called itration.
+    -Loops are basically two types
+            1. Entry Control loops
+            2. Exit control loops
+
+Entry Control Loops: It checks the condition before executing the body (at entry point).
+                    Ex-While and for
+
+Exit Control Loops: It checks the condition after execuetes the body (at exit point).
+                    Ex- do While.
+
+While Loop:
+
+    -while loop is an entry control loop which contains initialization, condition, updation at three different points.
+    
+    Syntax:
+            initialization;
+            while(condition)
+            {
+                //----------
+                updation;
+            }
+
+Q. Write a Js code to print the given name in reverse.
+
+    let name=prompt("Enter any Name")
+
+    let i=name.length-1;
+    let rev="";
+    while(i>=0)
+    {
+        rev=rev+name.charAt(i);
+        i--;
+    }
+    alert(`Reverse of Name is ${rev}`);
+
+Q. Write a js code to input a sentence and get individual words reverse.
+
+do Whlile Loop:
+
+    -do while is ssed to iterate certaino statements until the dcondition is false but it is an exit control 
+     loop so it checks teh conditio at the exit poit . so , even if teh condition is false , it works for one time.
+
+     Syntax:
+
+            initialization;
+
+            do{
+                //--------
+                updation;
+            }while(condition);
+
+
+Q. write js code to check wheather given number is pallindrome or not.
+Q. write a js code to print digit sum of given number until its single digit.
+Q. write a js code to check and print number of vowels and spaces in given sentence
+
+
+For Loop: for loop is used to iterate certain statement by keeping initialization, condition and updation in single staement.
+
+        Syntax :
+
+                for(initialization ; condition ; updation)
+                {
+                    //-----------
+                }
+    This is also called standard for loop.
+
+    Q. write js code to print numbers from 1 to 20 in reverse order using for loop.
+        let i;
+        for(i=20;i>0;i--)
+        {
+            console.log(i);
+        }
+
+For....in : for ....in is default built in iterator which is used to iterate based on idexes of array / objects.
+
+    Syntax: 
+        for(let index/ key of array/object)
+        {
+            //body
+        }
+
+Q. write a jscode to iterate an array of elements and print their sum of odd indexed numbers.
+
+    for eg: let arr=[1,2,3,4,5]
+    
+    Output : 6(2+4)
+
+    let arr = [1,2,3,4,5]
+
+    let len=arr.length
+    let sum=0
+
+    for(let i=0;i<len;i++)
+    {
+        if(i%2!=0)
+        {
+            sum+=arr[i];
+        }
+    }
+    console.log("Odd index Places Sum : "+sum)
+
+    Q. write js code to accept a string reverse it using for loop.
+    Q.write a js code to print sum of natural numbers upto n where n is user input.
+    Q. write a js code to print the factorial of a given number
+    Q. write a js code to check wheather given no. is amstrong or not.

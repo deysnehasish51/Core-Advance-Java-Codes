@@ -1,0 +1,62 @@
+Events in JavaScript:
+
+    -Events are used to trigger a function when user action happended such as
+
+        -clicking a button,scrolling a page, typing an input etc...., 
+
+        Events can be attached to elements in two ways
+
+            i.Event Handlers : we use Event Handlers in HTML. They are followed by 'on'. They do not have propagation and can not be removed.
+
+                e.g: <button> oncllick="fun()">click me </button>
+
+                if we click on button it calls fun function in JavaScript.
+            ii.Event Linstener: we user Event Linstener in JavaScript. They are use methods like addEventListener adn removeEventListner. They 
+                are have propagation.
+
+                e.g: <button id="btn" oncllick="fun()">click me </button>
+
+                    document.getElementById('btn').addEventListener('click',fun);
+
+                    if we click the button, it calls fun function in JavaScript.
+
+                    By default it passeds an object to callback function called event object.
+
+                    document.getElementById('btn').addEventListener('click',function(e){
+                        console.log(e);
+                    });
+
+                    e contains values such as e.target(targeted element - button),
+                                              e.key(key board presesed value),
+                                              e.preventDefault(stoped default work) etc...
+
+        There are different types of events such as 
+
+            i. mouse events : Events triggered by mounse 
+                e.g: click,dblclick,mouseover,mouseout,mouseup,mousedown,drag,drop etc....
+            ii.key board events : Events triggered by key board
+                e.g: keyup,keydown etc...
+            iii.form events : Events triggered by form elements
+                e.g: input,change,select etc...
+            iv. window events : Events triggered by overall window 
+                e.g: scroll,load,end,etc....
+
+Event Propagation :
+
+    - Events can be propagated from child to parent or parent to child. This propagation are two types
+        i. Bubbling : bottom up approch , by default events follow bubbling.
+        ii.Capturing: top down approch.
+
+    
+
+Event Deligation:
+    
+    - it is the design pattern or idea using parent div events instead of individual child events.
+
+        e.g: document.getElementById('buttons').addEventListener('click',(e)=>
+        {
+            alert(e.target.textContent);
+        });
+
+        we can stop propagation using stopPropagation method.
+        
